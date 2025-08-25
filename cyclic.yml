@@ -1,0 +1,9 @@
+version: 1
+build:
+  commands:
+    - npm install
+    - cd client && npm install && npm run build
+    - cp -r client/build/* ./public/
+start: npm start
+environment:
+  NODE_ENV: production
