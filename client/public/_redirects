@@ -1,0 +1,4 @@
+/api/events/* /.netlify/functions/events 200
+/api/bookings/reference/* /.netlify/functions/booking-reference 200
+/api/bookings/* /.netlify/functions/bookings 200
+/* /index.html 200
