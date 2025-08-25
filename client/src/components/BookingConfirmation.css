@@ -1,0 +1,168 @@
+.confirmation-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.confirmation-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation-card h2 {
+  color: #27ae60;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.success-message {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.booking-details {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.reference-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.reference-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.reference-code {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px dashed #667eea;
+  letter-spacing: 2px;
+}
+
+.details-section,
+.customer-section,
+.ticket-section {
+  margin-bottom: 2rem;
+}
+
+.details-section h3,
+.customer-section h3,
+.ticket-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.total-amount {
+  font-weight: 700;
+  color: #27ae60;
+  font-size: 1.1rem;
+}
+
+.status.confirmed {
+  background: #d4edda;
+  color: #155724;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.actions {
+  margin-bottom: 2rem;
+}
+
+.new-booking-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.new-booking-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.instructions {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.instructions h4 {
+  color: #856404;
+  margin-bottom: 1rem;
+}
+
+.instructions ul {
+  color: #856404;
+  padding-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .confirmation-card {
+    padding: 1.5rem;
+  }
+  
+  .reference-code {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
