@@ -12,9 +12,20 @@ app.use(express.json());
 
 // MongoDB connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/sports-tickets';
+
+if (!process.env.MONGODB_URI && process.env.NODE_ENV === 'production') {
+  console.error('MONGODB_URI environment variable is required in production');
+  process.exit(1);
+}
+
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+    if (process.env.NODE_ENV === 'production') {
+      process.exit(1);
+    }
+  });
 
 // Routes
 app.use('/api/events', require('./routes/events'));
