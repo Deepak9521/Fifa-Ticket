@@ -4,5 +4,8 @@
   "description": "Netlify serverless functions for sports ticket booking",
   "dependencies": {
     "mongoose": "^7.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
